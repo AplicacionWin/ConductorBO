@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.activity.TransactionListActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:title="Transacciones de la Billetera"
+            android:id="@+id/toolbar"
+            app:navigationIcon="@drawable/back"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recentTransactionRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/empty"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/emptybox"/>
+        <com.nikola.driver.utils.customText.CustomRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/noData"
+            android:layout_below="@id/empty"
+            android:text="@string/you_don_t_have_any_transactions"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:padding="10dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

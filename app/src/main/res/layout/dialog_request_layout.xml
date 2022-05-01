@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_facebook_button_background_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/circle_back"
+            android:gravity="center"
+            android:textColor="@color/rating_color_bg"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+    <RelativeLayout
+        android:id="@+id/location_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/req_progress_bar"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:cpb_background_progressbar_color="@color/light_grey"
+            app:cpb_background_progressbar_width="8dp"
+            app:cpb_progressbar_color="@color/ripple_blue"
+            app:cpb_progressbar_width="8dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_location"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/defult_user" />
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/lay_respond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/location_lay"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_accept"
+            android:layout_width="73dp"
+            android:layout_height="66dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="@dimen/feedback_margin"
+            android:background="@drawable/verified"
+            android:padding="10dp" />
+
+        <ImageButton
+            android:id="@+id/btn_reject"
+            android:layout_width="73dp"
+            android:layout_height="66dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/cancel"
+            android:padding="10dp" />
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lay_respond"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <com.nikola.driver.utils.customText.CustomRegularSemiboldTextView
+                android:id="@+id/tv_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/hours"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:visibility="gone"/>
+
+            <com.nikola.driver.utils.customText.CustomRegularTextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/name"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <com.nikola.driver.utils.customText.CustomRegularTextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/pickup_address_"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+            <com.nikola.driver.utils.customText.CustomRegularTextView
+                android:id="@+id/tv_d_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/drop_address_"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="0">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+                    <com.nikola.driver.utils.customText.CustomRegularTextView
+                        android:id="@+id/tv_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/distance"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <com.nikola.driver.utils.customText.CustomRegularTextView
+                        android:id="@+id/tv_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/txt_dur"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

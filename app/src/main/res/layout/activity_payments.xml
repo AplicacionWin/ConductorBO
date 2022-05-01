@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.activity.PaymentsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+
+            <LinearLayout
+                android:id="@+id/savedCardsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <com.nikola.driver.utils.customText.CustomBoldRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="@string/pay_with"/>
+
+    <!--Available options-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/paymentModesRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_payment_mode" />
+
+        <TextView
+            android:id="@+id/empty_payment_mode_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/nothing_found"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            tools:visibility="gone" />
+
+    </RelativeLayout>
+
+            <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/saved_cards"
+                    android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/cardsRecycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:itemCount="2"
+                        tools:listitem="@layout/item_credit_card" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:id="@+id/emptyLayout"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:id="@+id/emptyImage"/>
+
+                        <TextView
+                            android:id="@+id/empty_cards_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/nothing_found"
+                            android:textColor="@color/bt_light_gray"
+                            tools:visibility="gone" />
+
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/add_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:paddingEnd="30dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/add_card_plus"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry" />
+            </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

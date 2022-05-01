@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white"
+    android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ic_launcher" />
+
+            <com.nikola.driver.utils.customText.CustomBoldRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/lets_get_started"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <com.nikola.driver.utils.customText.CustomRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/create_an_account_in_nikola"
+                android:textColor="@color/bt_light_gray"
+                android:textSize="14sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_register_user_icon"
+                android:layout_width="@dimen/dimen_profile_image_width"
+                android:layout_height="@dimen/dimen_profile_image_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:visibility="visible"
+                android:scaleType="centerCrop"
+                android:src="@drawable/defult_user" />
+
+            <com.nikola.driver.utils.customText.CustomRegularEditView
+                android:id="@+id/et_register_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/drawable_edittext_background"
+                android:hint="@string/first_name"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="20dp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <com.nikola.driver.utils.customText.CustomRegularEditView
+                android:id="@+id/et_register_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/drawable_edittext_background"
+                android:hint="@string/last_Name"
+                android:singleLine="true"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="15sp" />
+
+            <com.nikola.driver.utils.customText.CustomRegularEditView
+                android:id="@+id/et_register_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/drawable_edittext_background"
+                android:hint="@string/username"
+                android:singleLine="true"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="15sp" />
+
+            <com.nikola.driver.utils.customText.CustomRegularEditView
+                android:id="@+id/user_referral_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/drawable_edittext_background"
+                android:hint="@string/txt_referral_code"
+                android:singleLine="true"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/ic_share_black_24dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="15sp" />
+
+
+            <com.nikola.driver.utils.customText.CustomRegularEditView
+                android:id="@+id/et_register_your_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/drawable_edittext_background"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawablePadding="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="15sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                android:id="@+id/inputPassword"
+                app:passwordToggleTint="@color/bt_light_gray">
+                <com.nikola.driver.utils.customText.CustomRegularEditView
+                    android:id="@+id/et_register_your_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/drawable_edittext_background"
+                    android:hint="@string/login_Password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:drawablePadding="20dp"
+                    android:drawableStart="@drawable/ic_lock_open_black_24dp"
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:buttonTint="@color/circle_color"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <RadioButton
+                    android:id="@+id/btn_male"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:buttonTint="@color/com_facebook_button_background_color"
+                    android:checked="true"
+                    android:text="@string/txt_male"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/btn_female"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.5"
+                    android:buttonTint="@color/com_facebook_button_background_color"
+                    android:text="@string/txt_female"
+                    android:textSize="12sp" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1.5">
+
+                <Spinner
+                    android:id="@+id/sp_code"
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/drawable_edittext_background"/>
+
+                <com.nikola.driver.utils.customText.CustomRegularEditView
+                    android:id="@+id/et_register_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/drawable_edittext_background"
+                    android:hint="@string/phn_no"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+            <com.nikola.driver.utils.customText.CustomRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/txt_select_country"
+                android:visibility="gone"
+                android:textColor="@color/deep_grey"
+                android:textSize="13sp" />
+
+            <Spinner
+                android:id="@+id/sp_country_reg"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:background="@drawable/drawable_edittext_background">
+
+            </Spinner>
+
+            <com.nikola.driver.utils.customText.CustomRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/txt_select_currency"
+                android:visibility="gone"
+                android:textColor="@color/deep_grey"
+                android:textSize="13sp" />
+
+            <Spinner
+                android:id="@+id/sp_curency_reg"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:background="@drawable/drawable_edittext_background">
+
+            </Spinner>
+            <com.nikola.driver.utils.customText.CustomRegularEditView
+                android:id="@+id/et_register_vehicle_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/drawable_edittext_background"
+                android:hint="@string/your_vehicle_model"
+                android:inputType="textEmailAddress"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:drawableLeft="@drawable/ic_directions_car_black_24dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:drawablePadding="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+            <com.nikola.driver.utils.customText.CustomRegularEditView
+                android:id="@+id/et_register_vehicle_colour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/drawable_edittext_background"
+                android:hint="@string/your_vehicle_colour"
+                android:inputType="text"
+                android:drawableLeft="@drawable/pallet"
+                android:drawablePadding="20dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+            <com.nikola.driver.utils.customText.CustomRegularEditView
+                android:id="@+id/et_register_vehicle_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/drawable_edittext_background"
+                android:hint="@string/your_vehicle_number"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:drawableLeft="@drawable/number_plate"
+                android:paddingRight="10dp"
+                android:drawablePadding="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="15sp" />
+            <com.nikola.driver.utils.customText.CustomRegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/upload_vehicle_image" />
+
+            <ImageView
+                android:id="@+id/iv_register_vehicle_icon"
+                android:layout_width="300dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/car" />
+            <com.nikola.driver.utils.customText.CustomRegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/select_vehicle" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lst_vehicle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/checkBox"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:id="@+id/termsDesc"
+                    android:text="@string/please_accept_our_terms_and_conditions_to_proceed"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/rigister_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/com_facebook_button_background_color"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="@string/signup"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+            <com.nikola.driver.utils.customText.CustomRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="40dp"
+                android:layout_gravity="center"
+                android:id="@+id/redirectLogin"
+                android:text="@string/already_have_a_account_login"/>
+
+        </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+
+

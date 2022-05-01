@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.EarningsActivity">
+
+    <androidx.appcompat.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_history"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@drawable/background_with_shadow">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/earnings_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:padding="5dp"
+                app:srcCompat="@drawable/back" />
+
+            <com.nikola.driver.utils.customText.CustomBoldRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="end"
+                android:paddingRight="10dp"
+                android:text="@string/earnings"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="5dp"
+        app:contentPadding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.nikola.driver.utils.customText.CustomLightTextView
+                android:id="@+id/earnigsOV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/todays_ov_earnings"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                fontPath="fonts/sans_light.ttf"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                tools:ignore="MissingPrefix" />
+
+            <com.nikola.driver.utils.customText.CustomLightTextView
+                android:id="@+id/earningsAmtOV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:layout_weight="1"
+                fontPath="fonts/sans_extra_bold.ttf"
+                android:textColor="@color/circle_color"
+                android:textAlignment="textEnd"
+                android:textSize="28sp"
+                tools:ignore="MissingPrefix" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.nikola.driver.utils.customText.CustomLightTextView
+                android:id="@+id/todayEarnings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/todays_s_earnings"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                fontPath="fonts/sans_light.ttf"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                tools:ignore="MissingPrefix" />
+
+            <com.nikola.driver.utils.customText.CustomLightTextView
+                android:id="@+id/todayEarningsAmt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:layout_weight="1"
+                fontPath="fonts/sans_extra_bold.ttf"
+                android:textColor="@color/circle_color"
+                android:textAlignment="textEnd"
+                android:textSize="28sp"
+                tools:ignore="MissingPrefix" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.nikola.driver.utils.customText.CustomLightTextView
+                android:id="@+id/monthlyEarnings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/monthly_earnings"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                fontPath="fonts/sans_light.ttf"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                tools:ignore="MissingPrefix" />
+
+            <com.nikola.driver.utils.customText.CustomLightTextView
+                android:id="@+id/monthlyEarningsAmt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:layout_weight="1"
+                fontPath="fonts/sans_extra_bold.ttf"
+                android:textColor="@color/circle_color"
+                android:textAlignment="textEnd"
+                android:textSize="28sp"
+                tools:ignore="MissingPrefix" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <com.nikola.driver.utils.customText.CustomLightTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_earnings"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:layout_gravity="center"
+
+                android:textColor="@color/black"
+                fontPath="fonts/sans_light.ttf"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                tools:ignore="MissingPrefix" />
+
+            <com.nikola.driver.utils.customText.CustomLightTextView
+                android:id="@+id/totalEarnings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:layout_weight="1"
+                fontPath="fonts/sans_extra_bold.ttf"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                tools:ignore="MissingPrefix" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.nikola.driver.utils.customText.CustomLightTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_trips"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                fontPath="fonts/sans_light.ttf"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                tools:ignore="MissingPrefix" />
+
+            <com.nikola.driver.utils.customText.CustomLightTextView
+                android:id="@+id/totalTrips"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:layout_weight="1"
+                fontPath="fonts/sans_extra_bold.ttf"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                tools:ignore="MissingPrefix" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.nikola.driver.utils.customText.CustomLightTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/completed_trips"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                fontPath="fonts/sans_light.ttf"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                tools:ignore="MissingPrefix" />
+
+            <com.nikola.driver.utils.customText.CustomLightTextView
+                android:id="@+id/completedTrips"
+                fontPath="fonts/sans_extra_bold.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="MissingPrefix" />
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <com.nikola.driver.utils.customText.CustomBoldRegularTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_10_days_earnings"
+        android:textColor="@color/black"
+        fontPath="fonts/sans_light.ttf"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        tools:ignore="MissingPrefix" />
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/weeklyChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_above="@+id/totalEarnings"/>
+
+        </LinearLayout>
+
+ </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp">
+
+
+    <com.nikola.driver.utils.customText.CustomRegularTextView
+        android:id="@+id/txt_out_Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/in_message_bg"
+        android:text=""
+        android:textColor="@android:color/white" />
+
+    <com.nikola.driver.utils.customText.CustomRegularTextView
+        android:id="@+id/txt_in_Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/txt_out_Message"
+        android:background="@drawable/out_message_bg"
+        android:text=""
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>

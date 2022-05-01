@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:mode="same_level"
+    app:dragEdge="right">
+
+    <FrameLayout
+        android:id="@+id/delete_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/red">
+
+        <com.nikola.driver.utils.customText.CustomRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/cancel"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="@android:color/white"
+            android:text="@string/cancel"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:id="@+id/icon"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <com.nikola.driver.utils.customText.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:alpha="0.8"
+                    android:id="@+id/title"
+                    android:text=""/>
+
+                <com.nikola.driver.utils.customText.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="12sp"
+                    android:id="@+id/status"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <com.nikola.driver.utils.customText.CustomRegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:layout_gravity="bottom"
+                android:textAlignment="textEnd"
+                android:id="@+id/amount"
+                android:singleLine="true"
+                android:textColor="@color/ripple_blue"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

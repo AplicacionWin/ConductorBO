@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/travel_map_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/driver_travel_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="0dp"
+            tools:context=".MainActivity" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/sosCall"
+            android:layout_width="109dp"
+            android:layout_height="90dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="174dp"
+            android:layout_marginEnd="17dp"
+            android:longClickable="true"
+            app:srcCompat="@drawable/ic_sos" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/background_with_shadow"
+        android:orientation="vertical">
+
+        <com.nikola.driver.utils.customText.CustomRegularTextView
+            android:id="@+id/tv_trip_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="3dp"
+            android:padding="8dp"
+            android:scrollHorizontally="false"
+            android:singleLine="true"
+            android:text="@string/txt_trip_id"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+        <com.nikola.driver.utils.customText.CustomRegularTextView
+            android:id="@+id/address_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="@string/txt_pickup_address"
+            android:textAllCaps="true"
+            android:textColor="#17d83e" />
+
+        <com.nikola.driver.utils.customText.CustomRegularTextView
+            android:id="@+id/tv_current_location"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="3dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="8dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/txt_current_location"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/stopLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone">
+            <com.nikola.driver.utils.customText.CustomBoldRegularTextView
+                android:id="@+id/stopLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stop"
+                android:textColor="@color/black"/>
+            <com.nikola.driver.utils.customText.CustomRegularTextView
+                android:id="@+id/stopAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:ellipsize="marquee"
+                android:layout_toRightOf="@+id/stopLabel"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/txt_current_location"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_driverdetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_with_shadow"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_user_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="50dp"
+                        android:src="@mipmap/car_background" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_user"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center|end"
+                        android:src="@drawable/defult_user" />
+
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_user"
+                    android:orientation="vertical">
+
+                    <com.nikola.driver.utils.customText.CustomBoldRegularTextView
+                        android:id="@+id/tv_userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Christian"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <!--<com.aurelhubert.simpleratingbar.SimpleRatingBar
+                        android:id="@+id/simple_rating_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_margin="20dp"
+                        app:drawablePadding="10dp"
+                        app:rating="0"
+                        app:maxRating="5"
+                        android:clickable="false"/>-->
+
+                    <com.nikola.driver.utils.customText.CustomRegularTextView
+                        android:id="@+id/tv_userMobileNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="12345"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.01dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/light_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1.5">
+
+                <LinearLayout
+                    android:id="@+id/driver_contact"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/phone" />
+
+                    <com.nikola.driver.utils.customText.CustomRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_contact"
+                        android:textColor="@color/black"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_direction"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/directions" />
+
+                    <com.nikola.driver.utils.customText.CustomRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/txt_direction"
+                        android:textColor="@color/black"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cancel_trip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/close" />
+
+                    <com.nikola.driver.utils.customText.CustomRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_cancel_ride"
+                        android:textColor="@color/black"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/origenDataLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="0"
+                android:layout_margin="5dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <com.nikola.driver.utils.customText.CustomRegularTextView
+                        android:id="@+id/tv_origenDur"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/txt_dur"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:gravity="center"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <com.nikola.driver.utils.customText.CustomRegularTextView
+                        android:id="@+id/tv_origenDist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/txt_dis"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:gravity="center"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.nikola.driver.utils.customText.CustomLightTextView
+                android:id="@+id/tv_trip_status"
+                android:layout_width="match_parent"
+                android:layout_height="79dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/rounded_button_welcome"
+                android:gravity="center"
+                android:text="@string/tap_to_trip_started"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="10dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/back"
+            android:background="@drawable/back"/>
+
+        <com.nikola.driver.utils.customText.CustomRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ride_details"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:id="@+id/rootLayout"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/buttonLayout"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp">
+
+                <com.nikola.driver.utils.customText.CustomRegularTextView
+                    android:id="@+id/tripTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oct 2019"
+                    android:layout_marginRight="40dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <com.nikola.driver.utils.customText.CustomRegularTextView
+                    android:id="@+id/requestUniqueId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tripTime"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="5dp"
+                    android:text="#00000"
+                    android:textColor="@color/bt_light_gray"
+                    android:textSize="14sp" />
+
+                <com.nikola.driver.utils.customText.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_earnings"
+                    android:layout_marginTop="25dp"
+                    android:layout_alignParentRight="true"/>
+
+                <com.nikola.driver.utils.customText.CustomRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/amount"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:text="$30"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/mapImage"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/providerLayout"
+                    android:layout_weight="1">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/map"
+                        android:id="@+id/providerImage"/>
+
+                    <com.nikola.driver.utils.customText.CustomRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Provider Name"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:singleLine="true"
+                        android:layout_toRightOf="@id/providerImage"
+                        android:id="@+id/providerName"/>
+
+                    <com.aurelhubert.simpleratingbar.SimpleRatingBar
+                        android:layout_width="80dp"
+                        android:layout_height="15dp"
+                        android:layout_toRightOf="@id/providerImage"
+                        android:layout_below="@id/providerName"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rating"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:layout_weight="1">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/map"
+                        android:id="@+id/serviceImage"/>
+
+                    <com.nikola.driver.utils.customText.CustomRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Service Name"
+                        android:textColor="@color/black"
+                        android:singleLine="true"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="14sp"
+                        android:layout_toRightOf="@id/serviceImage"
+                        android:id="@+id/serviceName"/>
+
+                    <com.nikola.driver.utils.customText.CustomRegularTextView
+                        android:layout_width="80dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="10sp"
+                        android:layout_toRightOf="@id/serviceImage"
+                        android:layout_below="@id/serviceName"
+                        android:text="Model name"
+                        android:id="@+id/modelName"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:alpha="0.3"
+                android:layout_marginTop="10dp"
+                android:background="@color/bt_light_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/dot_orange" />
+
+                <com.nikola.driver.utils.customText.CustomRegularTextView
+                    android:id="@+id/sourceAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:maxLines="2"
+                    android:text="bannergatta road bangalore"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/dot_black" />
+
+                <com.nikola.driver.utils.customText.CustomRegularTextView
+                    android:id="@+id/destAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="bannergatta road bangalore"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/invoiceLayout">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:alpha="0.5"
+                android:layout_marginBottom="10dp"
+                android:background="@color/bt_light_gray"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <com.nikola.driver.utils.customText.CustomBoldRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/invoice"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:orientation="horizontal">
+
+                <com.nikola.driver.utils.customText.CustomRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ride_fare"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"/>
+
+                <com.nikola.driver.utils.customText.CustomRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/ridefare"
+                    android:textSize="14sp"
+                    android:text="@string/_0_00"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:orientation="horizontal">
+
+                <com.nikola.driver.utils.customText.CustomRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/service_fee"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"/>
+
+                <com.nikola.driver.utils.customText.CustomRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:id="@+id/serviceFee"
+                    android:text="@string/_0_00"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:orientation="horizontal">
+
+                <com.nikola.driver.utils.customText.CustomRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel_fee"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+
+                <com.nikola.driver.utils.customText.CustomRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:id="@+id/cancellationFee"
+                    android:textAlignment="textEnd"
+                    android:text="@string/_0_00"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:orientation="horizontal">
+
+                <com.nikola.driver.utils.customText.CustomRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/discount"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+
+                <com.nikola.driver.utils.customText.CustomRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/discount"
+                    android:textSize="14sp"
+                    android:text="@string/_0_00"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5sp"
+                android:background="@color/bt_light_gray"
+                android:alpha="0.5"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:orientation="horizontal">
+
+                <com.nikola.driver.utils.customText.CustomBoldRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp"
+                    android:layout_weight="1"
+                    android:text="@string/total"
+                    android:textColor="@color/black" />
+
+                <com.nikola.driver.utils.customText.CustomBoldRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/total"
+                    android:text="$00"
+                    android:textSize="18dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="30dp">
+                <com.nikola.driver.utils.customText.CustomRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/include_10_00_taxes"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:id="@+id/taxes"
+                    android:textColor="@color/bt_light_gray"/>
+                <com.nikola.driver.utils.customText.CustomRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/payment_Mode"
+                    android:text="@string/card"
+                    android:visibility="gone"
+                    android:textSize="18sp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:alpha="0.5"
+        android:id="@+id/topLine"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bt_light_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/buttonLayout"
+        android:layout_gravity="bottom">
+
+        <com.nikola.driver.utils.customText.CustomRegularTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/chat"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="@string/chat"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+            android:background="@color/bt_light_gray"/>
+
+        <com.nikola.driver.utils.customText.CustomRegularTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tack"
+            android:textSize="18sp"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="@string/track"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+            android:background="@color/bt_light_gray"/>
+
+        <com.nikola.driver.utils.customText.CustomRegularTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/cancel"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="@string/cancel"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/loader"/>
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@mipmap/ic_launcher"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"/>
+
+        <com.nikola.driver.utils.customText.CustomBoldRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_back"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:textSize="22sp"/>
+
+        <com.nikola.driver.utils.customText.CustomRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/login_if_you_are_an_existing_user_of_nikola"
+            android:layout_gravity="center_horizontal"
+            android:textSize="12sp"/>
+
+        <com.nikola.driver.utils.customText.CustomRegularEditView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_address"
+            android:background="@drawable/drawable_edittext_background"
+            android:textColor="@color/black"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:id="@+id/email"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:paddingBottom="15dp"
+            android:drawablePadding="20dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginRight="20dp"
+            android:textColorHint="@color/bt_light_gray"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:id="@+id/inputPassword"
+            app:passwordToggleTint="@color/bt_light_gray">
+
+        <com.nikola.driver.utils.customText.CustomRegularEditView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:background="@drawable/drawable_edittext_background"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:id="@+id/password"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:drawableStart="@drawable/ic_lock_open_black_24dp"
+            android:drawablePadding="20dp"
+            android:paddingBottom="15dp"
+            android:layout_marginRight="20dp"
+            android:textColorHint="@color/bt_light_gray"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.nikola.driver.utils.customText.CustomRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:layout_marginTop="10dp"
+            android:id="@+id/forgotPassword"
+            android:layout_gravity="right"
+            android:textSize="16sp"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="#003E6A"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <com.nikola.driver.utils.customText.CustomRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or_signin_using_any_of_your_social_account"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/socialLogin"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:textSize="16sp"/>
+
+        <com.nikola.driver.utils.customText.CustomRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="20dp"
+            android:id="@+id/signUp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+</ScrollView>

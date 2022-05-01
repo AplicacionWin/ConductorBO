@@ -1,0 +1,394 @@
+<resources>
+    <string name="app_name">Win Rideshare Driver</string>
+    <string name="welcom_btn">Get started</string>
+    <string name="app_title">Win Rideshare Driver</string>
+    <string name="toolbar_title">Win Rideshare Driver</string>
+    <string name="login_email">Email Id</string>
+    <string name="login_Password">Password</string>
+    <string name="login_btn">Sign In</string>
+    <string name="btn_accept">Accept</string>
+    <string name="btn_reject">Reject</string>
+    <string name="login_errror">You have logged in other device!</string>
+    <string name="txt_respod">Responding...</string>
+    <string name="forgot_pass_btn">Forgot Password?</string>
+    <string name="new_user_btn">New Driver?</string>
+    <string name="req_pass_btn">Request Password</string>
+    <string name="register_btn">Register</string>
+    <string name="forgot_txt_note">Please Enter Email Id to Receive Password</string>
+    <string name="first_name">First Name</string>
+    <string name="last_Name">Last Name</string>
+    <string name="username">Username</string>
+    <string name="txt_referral_code">Referral code</string>
+    <string name="your_password">Your Password</string>
+    <string name="your_email">Your Email</string>
+    <string name="phn_no">Phone Number</string>
+    <string name="txt_select_country">Select Country</string>
+    <string name="txt_select_currency">Select Currency</string>
+    <string name="login_cancelled">login cancelled</string>
+    <string name="login_failed">login failed</string>
+    <string name="btn_edit">EDIT</string>
+    <string name="btn_save">SAVE</string>
+    <string name="txt_current_loc">Current Location</string>
+    <string name="txt_drop_loc">Drop Location</string>
+    <string name="txt_types_title">Available Cars</string>
+    <string name="txt_types_payment">Cash</string>
+    <string name="invoice">INVOICE</string>
+    <string name="total_fare">TOTAL FARE</string>
+    <string name="trip_summary">TRIP SUMMARY</string>
+    <string name="rate_ride">Rate the Customer</string>
+
+    <string name="txt_male">Male</string>
+    <string name="txt_female">Female</string>
+
+    <string name="txt_mobile_error">Please Enter Mobile number!</string>
+    <string name="txt_fname_error">Please Enter First name!</string>
+    <string name="txt_lname_error">Please Enter Last name!</string>
+    <string name="txt_incorrect_error">Incorrect Email id!</string>
+    <string name="txt_picture_error">Please choose profile picture!</string>
+    <string name="txt_phone_error">Please Enter phone number!</string>
+    <string name="txt_pass8_error">Password must be at least 8 character!</string>
+
+    <string name="txt_email_error">Please Enter Email ID!</string>
+    <string name="txt_pass_error">Please Enter Password!</string>
+    <string name="txt_load">Loading…</string>
+    <string name="txt_confirm">Confirming...</string>
+    <string name="txt_signin">Signing in...</string>
+    <string name="reg_load">Registering...</string>
+    <string name="updating_pro_load">Updating profile...</string>
+    <string name="req_pass_load">Requesting Password...</string>
+    <string name="change_availability">Change Status</string>
+    <string name="setting">Ready to drive?</string>
+    <string name="doc">Upload your documents</string>
+    <string name="help_line">In Case of Emergency</string>
+
+    <string name="my_home">Principal</string>
+    <string name="my_payment">Agregar Pago</string>
+    <string name="my_free_ride">Viajes gratuitos</string>
+    <string name="ride_history">Historial de viaje</string>
+    <string name="my_promo">Promociones</string>
+    <string name="my_help">Ayuda</string>
+    <string name="txt_logout">Cerrar sesión</string>
+    <string name="planillaViaje">Travel Worksheet</string>
+    <string name="drawer_open">abrir</string>
+    <string name="drawer_close">cerrar</string>
+    <string name="txt_yes">Si</string>
+
+    <string name="txt_no">No</string>
+    <string name="logout_text">¿Estás seguro que deseas cerrar sesión?</string>
+
+    <string name="update_success_text">Perfil actualizado correctamente</string>
+
+
+    <string name="facebook_api_id">1728426610810179</string>
+
+    <string name="sender_id">621670998256</string>
+    <string name="googleApp_id">621670998256</string>
+    <string name="map_key">AIzaSyBC_Ff-gjCriYGBVzZ6BMpJzTO1Hk7uMaY</string>
+    <string name="txt_slct_option">Choose Picture</string>
+
+    <string name="txt_gellery">Galería</string>
+    <string name="txt_cameray">Cámara</string>
+    <string name="txt_img_error">¡No se puede seleccionar la imagen!</string>
+    <string name="txt_current_location">\u25A0  ¿A dónde desea ir?</string>
+    <string name="txt_symbol_dot">\u25CF</string>
+
+    <string name="txt_symbol_square">\u25A0</string>
+    <string name="txt_dest_hint">¿A dónde desea ir?</string>
+    <string name="txt_req_cab">Solicitar Taxi</string>
+
+    <string name="txt_success_forgot_password">La contraseña fue enviada exitosamente al email registrado </string>
+
+    <string name="status_1">Doctor Accepted</string>
+
+    <string name="status_2">Doctor Departed</string>
+    <string name="status_3">Doctor Arrived</string>
+    <string name="status_4">Start Treatment</string>
+    <string name="status_5">End Treatment</string>
+    <string name="history_title">Ride History</string>
+
+
+    <string name="txt_warning">( Disabled to avoid Vandalism of Demo )</string>
+    <string name="btn_status_txt_1">Tap when Departed</string>
+
+    <string name="btn_status_txt_2">Arrived at Customers Place</string>
+    <string name="btn_status_txt_3">Tap to Start Trip</string>
+    <string name="btn_status_txt_4">Tap to End Trip</string>
+    <string name="txt_pickup_address">PickUp Address</string>
+    <string name="give_rating">Please give rating to user</string>
+    <string name="rated_successfully">User rated successfully</string>
+    <string name="drop_address">DROP ADDRESS</string>
+    <string name="txt_drop_address">Drop Address</string>
+    <string name="dialog_exit_text">Are you sure ?</string>
+    <string name="dialog_exit_caps">EXIT</string>
+    <string name="txt_gps_off">GPS is Off!</string>
+
+    <string name="txt_gps_msg">Please Turn On GPS</string>
+    <string name="txt_enable">Enable</string>
+    <string name="txt_exit">Exit</string>
+    <string name="dialog_no_internet">No Internet</string>
+
+    <string name="no_internet">Internet not available</string>
+    <string name="dialog_no_inter_message">You have not active internet connection.</string>
+    <string name="dialog_enable_3g">Enable 3G</string>
+    <string name="dialog_enable_wifi">Enable WIFI</string>
+    <string name="dialog_exit">Exit</string>
+    <string name="txt_note_choose">This feature is <b>Disabled</b> in <b>DEMO</b>, to avoid Vandalism of the Demo</string>
+    <string name="note_availbility">Use the button present above to toggle between "Available" &amp; "Not available ie. If you wish to take a break, you can turn-off your availability.</string>
+
+    <string name="doc_title">Upload your documents</string>
+    <string name="txt_no_history">--- No Rides in your account ---</string>
+    <string name="txt_availabilty">Not driving now / Am available now</string>
+    <string name="txt_avaialble_note1">What is this?</string>
+    <string name="txt_driver">Driver</string>
+    <string name="title_messenger">Messenger</string>
+    <string name="txt_type_msg">Type your message</string>
+    <string name="pic_worn">You can choose the picture from Gallery -or- Use Camera to create one.</string>
+    <string name="txt_note">Note: </string>
+    <string name="txt_ok">Ok</string>
+    <string name="txt_payment_type">Payment Type:</string>
+    <string name="txt_no_tolls">No. Tolls:</string>
+    <string name="txt_submit">Submit</string>
+    <string name="txt_not_avialbel">-- Not Available --</string>
+    <string name="txt_your_tripwith">your trip with </string>
+    <string name="txt_receipt">Receipt</string>
+    <string name="base_fare">Base fare</string>
+    <string name="min_fare">Min. fare</string>
+    <string name="time_cost">Time cost</string>
+    <string name="distance">Distance</string>
+    <string name="booking_price">Booking price</string>
+    <string name="service_tax">Service tax</string>
+    <string name="total">Total</string>
+    <string name="txt_time">Time</string>
+    <string name="txt_dis">Distance</string>
+    <string name="sign_in">Sign In</string>
+    <string name="title_logout">Logout</string>
+    <string name="txt_contact">Contact</string>
+    <string name="txt_direction">navigate gps</string>
+    <string name="txt_cancel_ride">Cancel ride</string>
+    <string name="txt_error_enter_msg">Please Enter Message before send</string>
+    <string name="txt_load_web">Are you sure? You want to load this page?</string>
+    <string name="txt_continue">Continue</string>
+    <string name="txt_cancel">Cancel</string>
+    <string name="txt_car_type">Car type</string>
+    <string name="txt_name">Name:</string>
+    <string name="txt_pic_address">Pickup Address:</string>
+    <string name="txt_des_address">Destination Address:</string>
+    <string name="txt_no_hours">No. Hours:</string>
+    <string name="txt_upload_fail">Failed to upload file!</string>
+    <string name="txt_total_no_tolls">Total Toll Gates in your route:</string>
+    <string name="txt_error_payment_confirm">Please wait till User to Confirm Payment!</string>
+    <string name="txt_ride_total">Your Ride Total is</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="txt_confirm_cash">Cash received successfully</string>
+    <string name="txt_trip_progress">Trip is in Progress!</string>
+    <string name="cancel_txt">Are you sure? You want to Cancel this Ride</string>
+    <string name="txt_contact_user">Contact User</string>
+    <string name="txt_call">Call</string>
+    <string name="txt_msg">Message</string>
+    <string name="txt_mobile">Mobile:</string>
+    <string name="txt_cancel_msg_user">Trip Cancelled by User!</string>
+    <string name="txt_allow_permission">Ubication Permissions</string>
+    <string name="txt_network_not_available">No network connection.Please check your internet</string>
+    <string name="txt_out_of_memory">Run out of memory please colse the other background apps and try again!</string>
+    <string name="select_vehicle">Select Vehicle type</string>
+
+    <string name="error_select_taxi">Please select taxi type</string>
+
+    <string name="upload_vehicle_image">Upload vehicle picture</string>
+    <string name="your_vehicle_model">Vehicle model</string>
+    <string name="your_vehicle_colour">Vehicle colour</string>
+    <string name="your_vehicle_number">Vehicle number</string>
+    <string name="txt__vehicle_picture_error">Please upload image of your vehicle</string>
+    <string name="txt_plate_error">Please enter vehicle number</string>
+    <string name="txt_colour_error">Please enter vehicle colour</string>
+    <string name="txt_model_error">Please enter vehicle model</string>
+    <string name="logout_txt">Logging out...</string>
+    <string name="update_txt">Please Update and get the Latest Version.</string>
+    <string name="update_txt_btn">Update</string>
+
+    <string name="update_txt_available">An Update Available</string>
+    <string name="txt_stop_added_user">Stop Added</string>
+    <string name="txt_dest_change_user">Destination Changed</string>
+    <string name="earnings">Earnings</string>
+    <string name="company_commission">Company commission</string>
+    <string name="updateAvailable">Update Available</string>
+    <string name="restartCaps">RESTART</string>
+    <string name="something_went_wrong">Something went wrong...</string>
+    <string name="password_cant_be_empty">Password can\'t be empty</string>
+    <string name="enter_valid_email">Please enter valid email</string>
+    <string name="minimum_six_characters">Minimum six characters</string>
+    <string name="you_have_logged_in_other_device">You have logged in other device!</string>
+    <string name="need_storage_permission_title">Storage permission</string>
+    <string name="need_storage_permission_desc">Needs storage permission to uplaod image</string>
+
+
+    <string name="grant">Grant</string>
+    <string name="cancel">Cancel</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="change_password_text">Change Password</string>
+    <string name="passwords_dont_match">Passwords do not match</string>
+    <string name="typ_msg">Type a message</string>
+    <string name="msgr">Message</string>
+    <string name="writeSomething">Write Something</string>
+    <string name="send">Send</string>
+    <string name="cant_sent_empty_msg">Cannot send empty message</string>
+    <string name="not_available">----Not Available----</string>
+    <string name="car_type">Car Type</string>
+    <string name="ride_detail">Ride detail</string>
+    <string name="enterFirstName">Enter first name</string>
+    <string name="enterLastName">Enter last name</string>
+    <string name="enterValidPhone">Enter valid phone number</string>
+    <string name="enterVechicleNumb">Enter vehicle numb</string>
+    <string name="enterVechicleNumber">Enter vehicle number</string>
+    <string name="enterModel">Enter vehicle model</string>
+    <string name="don_t_have_an_account_signup">Don\'t have an account? Signup</string>
+    <string name="location_permission">Location Permission</string>
+    <string name="needs_location_permission">Needs location permission for futher access</string>
+    <string name="needs_multimedia_permission">Needs permissions to multimedia content</string>
+    <string name="txt_no_cancel_reason">No Reason found</string>
+    <string name="issue_title">Select a issue</string>
+    <string name="ride_fare">Ride Fare</string>
+    <string name="service_fee">Service Fee</string>
+    <string name="cancel_fee">Cancel Fee</string>
+    <string name="discount">Discount</string>
+    <string name="chat">Chat</string>
+    <string name="track">Track</string>
+    <string name="billing_details">Billing Details</string>
+    <string name="_0_00">$0.00</string>
+    <string name="may_be_your_is_lost">May be your connection is lost. Please make sure you are connected to internet</string>
+    <string name="password">Password</string>
+    <string name="wallet">Wallet</string>
+    <string name="stripe_pk">pk_test_uDYrTXzzAuGRwDYtu7dkhaF3</string>
+    <string name="payments_text">Payments</string>
+    <string name="add_card">Add Card</string>
+    <string name="yes">Yes</string>
+    <string name="cardHint">XXXX-XXXX-XXXX-</string>
+    <string name="invalid_card">Invalid card</string>
+    <string name="sure_to_text">Are you sure</string>
+    <string name="delete_confirmation">Delete confirmation</string>
+    <string name="nothing_found">Nothing found</string>
+    <string name="saved_cards">Saved Cards</string>
+    <string name="add_card_plus">Add Card +</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="are_you_sure_to_cancel">Are you sure you want to cancel the redeem request</string>
+    <string name="no">No</string>
+    <string name="recent_transactions">Recent Transactions</string>
+    <string name="you_don_t_have_any_redeems">You don\'t have any Redeems</string>
+    <string name="add_money">Add Money</string>
+    <string name="you_don_t_have_any_transactions">You don\'t have any transactions</string>
+    <string name="upload_car_image">Please upload your vechicle image</string>
+    <string name="availability_text">Online is When you are available to take requests. Offline is when you take a break. You can change your status to AVAILABLE"</string>
+    <string name="noInternetMessage">You do not have an established internet connection. Please check you internet and try again</string>
+    <string-array name="currency">
+        <item>USD</item>
+    </string-array>
+    <string-array name="language">
+        <item>Select Language</item>
+        <item>Spanish(es)</item>
+		<item>English(en)</item>
+    </string-array>
+    <string name="pickup_address_">Pickup Address:</string>
+    <string name="drop_address_">Destination Address:</string>
+    <string name="name">Name:</string>
+    <string name="email_address">Email Address</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="login_if_you_are_an_existing_user_of_nikola">Login, if you are an existing user of WIN!!</string>
+    <string name="do_not_have_an_account_signup">Do not have an account? SignUp </string>
+    <string name="or_signin_using_any_of_your_social_account">Or SignIn using any of your Social account.</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="please_enter_amount">Please enter amount</string>
+    <string name="amount_cant_be_zero">Amount can\'t be zero</string>
+    <string name="space" />
+    <string name="message">Message</string>
+    <string name="todays_s_earnings">Todays\'s Earnings</string>
+    <string name="todays_ov_earnings">Social Network</string>
+    <string name="monthly_earnings">Monthly Earnings</string>
+    <string name="total_earnings">Total Earnings</string>
+    <string name="total_trips">Total trips</string>
+    <string name="completed_trips">Completed trips</string>
+    <string name="_10_days_earnings">10 days earnings</string>
+    <string name="pay_with">Pay With</string>
+    <string name="available">Available</string>
+    <string name="redeemed">Redeemed</string>
+    <string name="redeems">Redeems</string>
+    <string name="go_online">Activar</string>
+    <string name="no_documents_available">-----No Documents available----</string>
+    <string name="your_balance">Your balance</string>
+    <string name="transactions">Transactions</string>
+    <string name="you_don_t_have_transactions">You don\'t have transactions</string>
+    <string name="view_more">View More</string>
+    <string name="description">description</string>
+    <string name="your_earnings">Your earnings</string>
+    <string name="gallery_not_found">Gallery not found!</string>
+    <string name="upload_name">Upload Name</string>
+    <string name="send_redeem_request">Send Redeem Request</string>
+    <string name="add_money_to_wallet">Add money to wallet</string>
+    <string name="clear">Clear</string>
+    <string name="miles">miles</string>
+    <string name="mins">mins</string>
+    <string name="messages">Messages</string>
+    <string name="lets_get_started">Lets get started!</string>
+    <string name="create_an_account_in_nikola">Create an account in WIN</string>
+    <string name="please_accept_our_terms_and_conditions_to_proceed">Please accept our terms and conditions and privacy policy</string>
+    <string name="signup">SignUp</string>
+    <string name="already_have_a_account_login">Already have a account! Login.</string>
+    <string name="ride_details">Ride Details</string>
+    <string name="already_have_account_login">Already have an account! Login</string>
+    <string name="others">Others</string>
+    <string name="alreadyUploaded">The document is already been uploaded. You can only view the documents.</string>
+    <string name="loading">Loading...</string>
+    <string name="close">Close</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="availability">Availability</string>
+    <string name="hours">Hours:</string>
+    <string name="smart_car_app_v1_0_0">Smart Car App v1.0.0</string>
+    <string name="card">Card</string>
+    <string name="include_10_00_taxes">Include $10.00 Taxes</string>
+    <string name="stop">STOP:</string>
+    <string name="tap_to_trip_started">tap To trip started</string>
+    <string name="error_in_conneting_socket">Error in connecting to socket</string>
+    <string name="email_cant_be_empty">Email can\'t be empty</string>
+    <string name="referral_title">Refer and earn</string>
+    <string name="copiedCode">Code is been copied to clip board</string>
+    <string name="facebook_messager">Please Install Facebook Messenger</string>
+    <string name="txt_referral_earn">Your Referral Earn</string>
+    <string name="txt_refferal_link">Share Your Referral Link</string>
+    <string name="panicClic">You are in danger? Hold down the button for 3 seconds and we will help you!</string>
+    <string name="save_contact">Save contact</string>
+    <string name="number_panic_contact">Contact Number</string>
+    <string name="panic_contact">Panic Contact</string>
+    <string name="invalid">Invalid data</string>
+    <string name="otorgarPermisos">Please grant the Show pop-up windows while running in the background permission in settings.</string>
+    <string name="txt_dur">Duration</string>
+    <string name="taximetro">Taximeter</string>
+    <string name="listaplanillaViaje">Travel Worksheet List</string>
+    <string name="txt_trip_id">Trip_id</string>
+    <string name="viaje">"Trip: "</string>
+    <string name="recargarSaldo">Recharge Money</string>
+    <string name="cantidadRecarga">Amount</string>
+    <string name="recargar">Add Money</string>
+    <string name="saldo">Balance</string>
+    <string name="recargas">Refills: </string>
+    <string name="descuentos">Discounts: </string>
+    <string name="numTransferencia">Number of Bank Transfer</string>
+    <string name="fechaTransferencia">Date of Bank Transfer</string>
+    <string name="fillFields">Fill all fields</string>
+    <string name="selectDate">Pick the date</string>
+    <string name="historialRecarga">Balance History</string>
+    <string name="txt_no_historial">--- There are no recharges on your account ---</string>
+    <string name="recarga">Recharge:</string>
+    <string name="noSaldoTitulo">Insufficient balance</string>
+    <string name="noSaldoMensaje">You do not have enough balance to take this race. Recharge to take the following races.</string>
+
+
+    <string name="permisosRequeridos">The following permissions are required for a normal work of the application.</string>
+    <string name="permitir">Allow</string>
+    <string name="posicionActivada">Location service activated.</string>
+    <string name="mensajePermisos">
+        This application collects location data to enable the passenger assignment function, even when the application is closed or is not in use.
+        Win Rideshare Driver uses your location in the background for a better experience in assigning races close to where you are.
+    </string>
+</resources>
